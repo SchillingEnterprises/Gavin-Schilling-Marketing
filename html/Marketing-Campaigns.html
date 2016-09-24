@@ -2,7 +2,6 @@
 <html>
 
 	<head>
-
 		<title>Marketing Campaigns | Gavin Schilling Marketing, subsidary of Schilling Enterprises</title>
 
 		<!-- Meta Tags -->
@@ -11,6 +10,10 @@
 			<meta name="description" content="Gavin Schilling Marketing is a premire full-service global strategies marketing firm specializing in both online and offline">
 			<meta name="author" content="Gavin Schilling sole-proprietor of Gavin Schilling Marketing, a subsidary of Schilling Enterprises">
 		<!-- /Meta Tags -->
+
+		<!-- Facebook SDK for JavaScript with jQuery -->
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<!-- /Facebook SDK for JavaScript with jQuery -->
 
 		<!-- Stylesheets -->
 			<!-- Normalize CSS -->
@@ -30,49 +33,63 @@
 			<!-- /Google Fonts -->
 
 			<!-- Custom stylesheet -->
-				<link rel="stylesheet" type="text/css" href="../css/style.css">
+				<link rel="stylesheet" type="text/css" href="css/style.css">
 			<!-- /Custom stylesheet -->
 		<!-- /Stylesheets -->
 
+			<script>
+				$(document).ready(function() {
+				  $.ajaxSetup({ cache: true });
+				  $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
+				    FB.init({
+				      appId: '561430954040905',
+				      version: 'v2.7' // or v2.1, v2.2, v2.3, ...
+				    });     
+				    $('#loginbutton,#feedbutton').removeAttr('disabled');
+				    FB.getLoginStatus(updateStatusCallback);
+				  });
+				});
+			</script>
 	</head>
 
-	<body ?php include_once("analyticstracking.php") ?>
+	<body>
+		<!-- Header -->
+			<header>
+				<!-- Collapsing NavBar -->
+					<nav class="navbar navbar-light bg-faded">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+							&#9776;
+						</button>
+						<div class="collapse" id="exCollapsingNavbar">
+							<div class="bg-inverse p-a-1">
 
-		<header>
+								<!-- Nav Bar (Pills with Dropdown) -->
+									<ul class="nav nav-pills">
+										<li class="nav-item dropdown">
+										    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+										    <div class="dropdown-menu">
+												<a class="dropdown-item" href="html/Website-Development.html">Website Development</a>
+												<a class="dropdown-item" href="html/Marketing-Campaigns.html">Marketing Campaigns</a>
+												<a class="dropdown-item" href="html/Promotional-Services.html">Promotional Services</a>
+										    </div>
+										</li>
+									</ul>
+								<!-- /Nav Bar (Pills with Dropdown) -->
 
-			<!-- Collapsing NavBar -->
-				<nav class="navbar navbar-light bg-faded">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
-						&#9776;
-					</button>
-					<div class="collapse" id="exCollapsingNavbar">
-						<div class="bg-inverse p-a-1">
-
-							<!-- Nav Bar (Pills with Dropdown) -->
-								<ul class="nav nav-pills">
-									<li class="nav-item dropdown">
-									    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-									    <div class="dropdown-menu">
-											<a class="dropdown-item" href="Website-Development.html">Website Development</a>
-											<a class="dropdown-item" href="Marketing-Campaigns.html">Marketing Campaigns</a>
-											<a class="dropdown-item" href="Promotional-Services.html">Promotional Services</a>
-									    </div>
-									</li>
-								</ul>
-							<!-- /Nav Bar (Pills with Dropdown) -->
-
+							</div>
 						</div>
-					</div>
-				</nav>
-			<!-- /Collapsing NavBar -->
+					</nav>
+				<!-- /Collapsing NavBar -->
 
-			<img src="../img/Schilling-Enterprises.png" class="img-rounded m-x-auto d-block" alt="Schilling Enterprises logo">
+				<img src="img/Schilling-Enterprises.png" class="img-rounded m-x-auto d-block" alt="Schilling Enterprises logo">
 
-			<div class="text-xs-center">
-				<h1>Gavin Schilling Marketing</h1>
-				<h5>Subsidary of Schilling Enterprises</h5>
-			</div>
-		</header>
+				<div class="text-xs-center">
+					<h1>Gavin Schilling Marketing</h1>
+					<h5>Subsidary of Schilling Enterprises</h5>
+				</div>
+
+			</header>
+		<!-- /Header -->
 
 		<!-- JavaScript plugins -->
 
@@ -103,20 +120,48 @@
 
 		<!-- /JavaScript plugins -->
 
+		<!-- Facebook SDK for JavaScript snippet -->
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '561430954040905',
+		      xfbml      : true,
+		      version    : 'v2.7'
+		    });
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!-- /Facebook SDK for JavaScript snippet -->
 	</body>
 
 	<footer>
-
 		<!-- Breadcrumbs -->
 			<nav class="breadcrumb">
-			  <a class="breadcrumb-item" href="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/html/Marketing-Campaigns.html">Marketing Campaigns</a>
+			  <a class="breadcrumb-item" href="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/Marketing-Campaigns.html">Marketing Campaigns</a>
 			</nav>
 		<!-- /Breadcrumbs -->
 
 		<!-- Copyright -->
-	      <small>&copy;2016 <a href="https://www.facebook.com/optimal.leader">Schilling Enterprises</a></small>
+			<div>
+				<small>&copy;2016 <a href="https://www.facebook.com/optimal.leader">Schilling Enterprises</a></small>
+			</div>
 		<!-- /Copyright -->
 
+		<!-- Facebook Like -->
+			<div
+				class="fb-like"
+				data-share="true"
+				data-width="450"
+				data-show-faces="true">
+			</div>
+		<!-- /Facebook Like -->
 	</footer>
 
 </html>
