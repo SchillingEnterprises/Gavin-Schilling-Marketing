@@ -37,18 +37,29 @@
 	<body ?php include_once("analyticstracking.php") ?>
 
 		<header>
-			<!-- Nav Bar (Pills with Dropdown) -->
-				<ul class="nav nav-pills">
-					<li class="nav-item dropdown">
-					    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-					    <div class="dropdown-menu">
-							<a class="dropdown-item" href="#">Website Development</a>
-							<a class="dropdown-item" href="#">Marketing Campaigns</a>
-							<a class="dropdown-item" href="#">Promotional Services</a>
-					    </div>
-					</li>
-				</ul>
-			<!-- /Nav Bar (Pills with Dropdown) -->
+			<!-- Collapsing NavBar -->
+				<nav class="navbar navbar-light bg-faded">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+						&#9776;
+					</button>
+					<div class="collapse" id="exCollapsingNavbar">
+						<div class="bg-inverse p-a-1">
+							<!-- Nav Bar (Pills with Dropdown) -->
+								<ul class="nav nav-pills">
+									<li class="nav-item dropdown">
+									    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+									    <div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Website Development</a>
+											<a class="dropdown-item" href="#">Marketing Campaigns</a>
+											<a class="dropdown-item" href="#">Promotional Services</a>
+									    </div>
+									</li>
+								</ul>
+							<!-- /Nav Bar (Pills with Dropdown) -->
+						</div>
+					</div>
+				</nav>
+			<!-- /Collapsing NavBar -->
 		</header>
 
 		<!-- JavaScript plugins -->
