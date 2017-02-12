@@ -95,5 +95,8 @@ jspm_packages/
 # Yarn Integrity file
 .yarn-integrity
 
-// File Tree
-src/_mock/
+# File Tree
+src/
+app/
+gulpfile.js
+package.json
