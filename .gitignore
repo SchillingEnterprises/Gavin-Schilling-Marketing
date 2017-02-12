@@ -96,4 +96,5 @@ jspm_packages/
 .yarn-integrity
 
 # File Tree
-src/_mock/
+src/
+app/
