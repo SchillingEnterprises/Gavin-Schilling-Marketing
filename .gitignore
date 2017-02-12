@@ -98,3 +98,5 @@ jspm_packages/
 # File Tree
 src/
 app/
+gulpfile.js
+package.json
