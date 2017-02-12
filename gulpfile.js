@@ -17,8 +17,12 @@ const imagemin = require('gulp-imagemin');
 const useref = require('gulp-useref');
 const runSequence = require('run-sequence');
 
-gulp.task('fullHTMLIndex', function buildHTML() {
-  return gulp.src('./src/_mock/templates/pug/*.pug').pipe(pug()).pipe(concat('index.html')).pipe(gulp.dest('./app'));
+gulp.task('indexHTML', function buildHTML() {
+  return gulp.src('./src/_mock/templates/pug/index.pug').pipe(pug()).pipe(rename({ extname: '.html' })).pipe(gulp.dest('./app'));
+});
+
+gulp.task('tabHTMLs', function buildHTML() {
+  return gulp.src(['src/_mock/templates/pug/Marketing-Campaigns.pug', 'src/_mock/templates/pug/Promotional-Services.pug', 'src/_mock/templates/pug/Website-Development.pug']).pipe(pug()).pipe(rename({ extname: '.html' })).pipe(gulp.dest('./dist'));
 });
 
 gulp.task('uglifiedJS', function (cb) {
@@ -37,7 +41,7 @@ gulp.task('minifiedCSS', function () {
   return gulp.src('./src/_mock/styles/sass/*.sass').pipe(sass()).pipe(sourcemaps.init()).pipe(cleanCSS({ debug: true }, function (details) {
     console.log(details.name + ': ' + details.stats.originalSize);
     console.log(details.name + ': ' + details.stats.minifiedSize);
-  })).pipe(rename({ extname: '.min.css' })).pipe(sourcemaps.write()).pipe(gulp.dest('./app'));
+  })).pipe(rename({ extname: '.min.css' })).pipe(sourcemaps.write()).pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('clean:dist', function() {
@@ -55,7 +59,7 @@ gulp.task('useref', function(){
     .pipe(useref())
     // Minifies only if it's a JavaScript file
     .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('./'))
 });
 
 gulp.task('images', function(){
