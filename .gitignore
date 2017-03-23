@@ -96,7 +96,7 @@ jspm_packages/
 .yarn-integrity
 
 # File Tree
-src/
+
 app/
 gulpfile.js
 package.json
