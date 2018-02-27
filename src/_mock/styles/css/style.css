@@ -1,12 +1,13 @@
 .jumbotron {
-  background-color: transparent !important;
+  background-image: url("https://coresites-cdn.factorymedia.com/cooler_new/wp-content/uploads/2017/03/iStock-495731108.jpg");
+  background-size: cover;
 }
 
 h1 {
-	font-family: 'Tangerine', 'Poiret One', 'Katibeh', cursive;
+  font-family: 'Tangerine', 'Poiret One', 'Katibeh', cursive;
   color: gold;
 }
 
 .breadcrumb {
-	font-family: 'Poiret One', 'Katibeh', 'Tangerine', cursive;
+  font-family: 'Poiret One', 'Katibeh', 'Tangerine', cursive;
 }
