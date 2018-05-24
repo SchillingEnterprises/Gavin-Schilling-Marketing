@@ -160,119 +160,115 @@
 
         <main>
             <article class="container">
-                <section class="row">
-                    <div class="col-xs-12 col-sm-4">
+                <section class="col-xs-12 col-sm-4">
 
-                        <aside>
-                            <!-- Linkedin Badge -->
-                                <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="gavinschilling"><a class="LI-simple-link" href='https://www.linkedin.com/in/gavinschilling?trk=profile-badge'>Gavin Schilling</a></div>
-                            <!-- /Linkedin Badge -->
-                        </aside>
+                    <aside>
+                        <!-- Linkedin Badge -->
+                            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="gavinschilling"><a class="LI-simple-link" href='https://www.linkedin.com/in/gavinschilling?trk=profile-badge'>Gavin Schilling</a></div>
+                        <!-- /Linkedin Badge -->
+                    </aside>
 
-                        <!-- Facebook Comments Plug-in -->
-                            <div class="fb-comments hidden-sm-down" data-href="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/"
-                                data-width="40%" data-numposts="5"></div>
-                            <div id="fb-root"></div>
-                            <div class="col-md">
-                                <script>
-                                    $(document)
-                                        .ready(function () {
-                                            $.ajaxSetup({
-                                                cache: true
-                                            });
-                                            $.getScript(
-                                                '//connect.facebook.net/en_US/sdk.js'
-                                                , function () {
-                                                    FB.init({
-                                                        appId: '561430954040905'
-                                                        , version: 'v2.7' // or v2.1, v2.2, v2.3, ...
-                                                    });
-                                                    $(
-                                                            '#loginbutton,#feedbutton'
-                                                        )
-                                                        .removeAttr(
-                                                            'disabled'
-                                                        );
-                                                    FB.getLoginStatus(
-                                                        updateStatusCallback
-                                                    );
+                    <!-- Facebook Comments Plug-in -->
+                        <div class="fb-comments hidden-sm-down" data-href="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/"
+                            data-width="40%" data-numposts="5"></div>
+                        <div id="fb-root"></div>
+                        <div class="col-md">
+                            <script>
+                                $(document)
+                                    .ready(function () {
+                                        $.ajaxSetup({
+                                            cache: true
+                                        });
+                                        $.getScript(
+                                            '//connect.facebook.net/en_US/sdk.js'
+                                            , function () {
+                                                FB.init({
+                                                    appId: '561430954040905'
+                                                    , version: 'v2.7' // or v2.1, v2.2, v2.3, ...
                                                 });
-                                        });
-                                    (function (d, s, id) {
-                                        var js, fjs = d.getElementsByTagName(
-                                            s)[0];
-                                        if (d.getElementById(id)) return;
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src =
-                                            "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=561430954040905";
-                                        fjs.parentNode.insertBefore(js
-                                            , fjs);
-                                    }(document, 'script'
-                                        , 'facebook-jssdk'));
-                                    window.fbAsyncInit = function () {
-                                        FB.init({
-                                            appId: '561430954040905'
-                                            , xfbml: true
-                                            , version: 'v2.7'
-                                        });
-                                    };
-                                    (function (d, s, id) {
-                                        var js, fjs = d.getElementsByTagName(
-                                            s)[0];
-                                        if (d.getElementById(id)) {
-                                            return;
-                                        }
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src =
-                                            "//connect.facebook.net/en_US/sdk.js";
-                                        fjs.parentNode.insertBefore(js
-                                            , fjs);
-                                    }(document, 'script'
-                                        , 'facebook-jssdk'));
-                                </script>
-                            </div>
-                        <!-- /Facebook Comments Plug-in -->
-                    </div>
+                                                $(
+                                                        '#loginbutton,#feedbutton'
+                                                    )
+                                                    .removeAttr(
+                                                        'disabled'
+                                                    );
+                                                FB.getLoginStatus(
+                                                    updateStatusCallback
+                                                );
+                                            });
+                                    });
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(
+                                        s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src =
+                                        "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=561430954040905";
+                                    fjs.parentNode.insertBefore(js
+                                        , fjs);
+                                }(document, 'script'
+                                    , 'facebook-jssdk'));
+                                window.fbAsyncInit = function () {
+                                    FB.init({
+                                        appId: '561430954040905'
+                                        , xfbml: true
+                                        , version: 'v2.7'
+                                    });
+                                };
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(
+                                        s)[0];
+                                    if (d.getElementById(id)) {
+                                        return;
+                                    }
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src =
+                                        "//connect.facebook.net/en_US/sdk.js";
+                                    fjs.parentNode.insertBefore(js
+                                        , fjs);
+                                }(document, 'script'
+                                    , 'facebook-jssdk'));
+                            </script>
+                        </div>
+                    <!-- /Facebook Comments Plug-in -->
                 </section>
 
                 <section class="col-xs-12 col-sm-8">
-                    <div class="row">
-                        <!-- Dashboard -->
-                            <header class="page-header">Dashboard</header>
-                            <section class="row">
-                                <nav>
-                                    <div class="col-md-4">
-                                        <figure>
-                                            <a href="./dist/Website-Development.html">
-                                                <img src="dist/images/png/Programming-Languages-Word-Cloud.png" width="150" height="150" class="img-fluid" alt="Programming Languages Word Cloud">
-                                                <figcaption>Development</figcaption>
-                                            </a>
-                                        </figure>
-                                    </div>
+                    <!-- Dashboard -->
+                        <header class="page-header">Dashboard</header>
+                        <section class="row">
+                            <nav>
+                                <div class="col-md-4">
+                                    <figure>
+                                        <a href="./dist/Website-Development.html">
+                                            <img src="dist/images/png/Programming-Languages-Word-Cloud.png" width="150" height="150" class="img-fluid" alt="Programming Languages Word Cloud">
+                                            <figcaption>Development</figcaption>
+                                        </a>
+                                    </figure>
+                                </div>
 
-                                    <div class="col-md-4">
-                                        <figure>
-                                            <a href="./dist/Promotional-Services.html">
-                                                <img src="dist/images/jpg/Brand-Map.jpg" width="150" height="150" class="img-fluid" alt="Generic Brand Map">
-                                                <figcaption>Business Strategy</figcaption>
-                                            </a>
-                                        </figure>
-                                    </div>
+                                <div class="col-md-4">
+                                    <figure>
+                                        <a href="./dist/Promotional-Services.html">
+                                            <img src="dist/images/jpg/Brand-Map.jpg" width="150" height="150" class="img-fluid" alt="Generic Brand Map">
+                                            <figcaption>Business Strategy</figcaption>
+                                        </a>
+                                    </figure>
+                                </div>
 
-                                    <div class="col-md-4">
-                                        <figure>
-                                            <a href="./dist/Marketing-Campaigns.html">
-                                                <img src="dist/images/jpg/Marketing-Map.jpg" width="150" height="150" class="img-fluid" alt="Marketing Map of Options">
-                                                <figcaption>Advertising</figcaption>
-                                            </a>
-                                        </figure>
-                                    </div>
-                                </nav>
-                            </section>
-                        <!-- /Dashboard -->
-                    </div>
+                                <div class="col-md-4">
+                                    <figure>
+                                        <a href="./dist/Marketing-Campaigns.html">
+                                            <img src="dist/images/jpg/Marketing-Map.jpg" width="150" height="150" class="img-fluid" alt="Marketing Map of Options">
+                                            <figcaption>Advertising</figcaption>
+                                        </a>
+                                    </figure>
+                                </div>
+                            </nav>
+                        </section>
+                    <!-- /Dashboard -->
                 </section>
             </article>
         </main>
