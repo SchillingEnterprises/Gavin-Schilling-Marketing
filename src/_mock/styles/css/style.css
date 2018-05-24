@@ -3,7 +3,7 @@
   background-size: cover;
 }
 
-h1 {
+body > main > article > section.col-sm-12.col-md-8 > article > header {
   font-family: 'Tangerine', 'Poiret One', 'Katibeh', cursive;
   color: gold;
 }
