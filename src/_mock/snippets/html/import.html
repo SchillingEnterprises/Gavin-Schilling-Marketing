@@ -1,199 +1,192 @@
 <template>
 
-    <head>
+<html lang="en-US">
 
-        <!-- Meta Tags -->
-        <!-- Webcrawler Meta Tags -->
-        <meta charset="utf-8">
-        <meta name="title" content="Gavin Schilling Marketing, subsidary of Schilling Enterprises">
-        <meta name="description" content="Gavin Schilling Marketing is a premire full-service global strategies marketing firm specializing both online and offline.">
-        <meta name="author" content="Gavin Schilling">
-        <!-- /Webcrawler Meta Tags -->
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#">
 
-        <!-- Facebook Open Graph Meta Tags -->
-        <meta property="fb:app_id" content="561430954040905">
-        <meta property="og:title" content="Gavin Schilling Marketing">
-        <meta property="og:description" content="Gavin Schilling Marketing is a premire full-service global strategies marketing firm specializing both online and offline.">
-        <meta property="og:image" content="dist/images/jpg/Gavin_Schilling_Marketing_logo.jpg">
-        <meta property="og:type" content="website">
-        <!-- /Facebook Open Graph Meta Tags -->
+        <title>Gavin Schilling Marketing</title>
 
-        <!-- Twitter Card Meta Tags -->
-        <meta name="twitter:title" content="Gavin Schilling Marketing">
-        <meta name="twitter:description" content="Gavin Schilling Marketing is a premire full-service global strategies marketing firm specializing both online and offline.">
-        <meta name="twitter:creator" content="Gavin Schilling">
-        <meta name="twitter:image" content="./images/png/Schilling-Enterprises.png">
-        <meta name="twitter:card" content="summary">
-        <!-- /Twitter Card Meta Tags -->
-        <!-- /Meta Tags -->
-
-        <!-- Facebook SDK for JavaScript with jQuery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-        <!-- /Facebook SDK for JavaScript with jQuery -->
+        <!-- Meta Data -->
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+            <meta name="title" content="Gavin Schilling Marketing, subsidary of Schilling Enterprises" />
+            <meta name="description" content="Gavin Schilling Marketing is a premire full-service global strategies marketing firm specializing both online and offline." />
+            <meta name="author" content="Gavin Schilling" />
+            <meta itemprop="image" content="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/dist/images/png/Schilling-Enterprises.png" />
+            <meta itemprop="image" content="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/dist/images/png/Programming-Languages-Word-Cloud.png" />
+            <meta property="place:location:latitude" content="38.2718520" />
+            <meta property="place:location:longitude" content="-85.6177890" />
+            <meta property="place:location:altitude" content="176" />
+            <meta property="fb:app_id" content="561430954040905" />
+            <meta property="og:title" content="Gavin Schilling Marketing" />
+            <meta property="og:description" content="Gavin Schilling Marketing is a premire full-service global strategies marketing firm specializing both online and offline." />
+            <meta property="og:url:secure_url" content="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/index.html" />
+            <meta property="og:image:secure_url" content="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/img/Gavin_Schilling_Marketing_logo.jpg" />
+            <meta property="og:type" content="business.business" />
+            <meta property="og:site_name" content="Gavin Schilling Marketing" />
+            <meta property="fb:admins" content="optimal.leader" />
+            <meta property="business:contact_data:street_address" content="1008 Lake Way, CONDO D-7" />
+            <meta property="business:contact_data:locality" content="Louisville" />
+            <meta property="business:contact_data:region" content="KY" />
+            <meta property="business:contact_data:postal_code" content="40222-7334" />
+            <meta property="business:contact_data:country_name" content="US" />
+            <meta name="twitter:title" content="Gavin Schilling Marketing" />
+            <meta name="twitter:description" content="Gavin Schilling Marketing is a premire full-service global strategies marketing firm specializing both online and offline." />
+            <meta name="twitter:site" content="@schillgc" />
+            <meta name="twitter:creator" content="@schillgc" />
+            <meta name="twitter:url" content="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/index.html" />
+            <meta name="twitter:image:src" content="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/img/Schilling-Enterprises.png" />
+            <meta name="twitter:card" content="summary" />
+        <!-- /Meta Data -->
 
         <!-- Stylesheets -->
-        <!-- Normalize CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" integrity="sha256-K3Njjl2oe0gjRteXwX01fQD5fkk9JFFBdUHy/h38ggY=" crossorigin="anonymous" />
-        <!-- /Normalize CSS -->
+            <!-- Normalize CSS 8.0.0 -->
+            <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
 
-        <!-- Tether stylesheet -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether.min.css" integrity="sha256-y4TDcAD4/j5o4keZvggf698Cr9Oc7JZ+gGMax23qmVA=" crossorigin="anonymous" />
-        <!-- /Tether stylesheet -->
+            <!-- Tether 1.4.4 -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/css/tether.min.css" integrity="sha256-y4TDcAD4/j5o4keZvggf698Cr9Oc7JZ+gGMax23qmVA=" crossorigin="anonymous" />
 
-        <!-- Bootstrap stylesheet -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-        <!-- /Bootstrap stylesheet -->
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Katibeh|Poiret+One|Tangerine:700" rel="stylesheet">
-        <!-- /Google Fonts -->
+            <!-- Custom styles for dashboard -->
+            <link href="http://v4-alpha.getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
 
-        <!-- Custom stylesheet -->
-        <link rel="stylesheet" type="text/css" href="./css/style.min.css">
-        <!-- /Custom stylesheet -->
+            <!-- Google Fonts -->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Katibeh|Poiret+One|Tangerine:700">
+
+            <!-- Bootstrap Favicon -->
+            <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
+            <link rel="stylesheet" type="text/css" href="./dist/css/style.min.css">
         <!-- /Stylesheets -->
 
-        <script>
-            $(document)
-                .ready(function() {
-                    $.ajaxSetup({
-                        cache: true
-                    });
-                    $.getScript('//connect.facebook.net/en_US/sdk.js', function() {
-                        FB.init({
-                            appId: '561430954040905',
-                            version: 'v2.7' // or v2.1, v2.2, v2.3, ...
+        <!-- Scripts -->
+            <!-- Google Optimize -->
+                <style>
+                    .async-hide {
+                        opacity: 0 !important
+                    }
+                </style>
+                <script>
+                    (function (a, s, y, n, c, h, i, d, e) {
+                        s.className += ' ' + y;
+                        h.start = 1 * new Date;
+                        h.end = i = function () {
+                            s.className = s.className.replace(RegExp(
+                                ' ?' + y), '')
+                        };
+                        (a[n] = a[n] || [])
+                        .hide = h;
+                        setTimeout(function () {
+                            i();
+                            h.end = null
+                        }, c);
+                        h.timeout = c;
+                    })(window, document.documentElement, 'async-hide'
+                        , 'dataLayer', 4000, {
+                            'GTM-MFZG64F': true
                         });
-                        $('#loginbutton,#feedbutton')
-                            .removeAttr('disabled');
-                        FB.getLoginStatus(updateStatusCallback);
-                    });
-                });
-        </script>
+                </script>
+            <!-- /Google Optimize -->
+
+            <!-- Google Analytics -->
+                <script>
+                    (function (i, s, o, g, r, a, m) {
+                        i['GoogleAnalyticsObject'] = r;
+                        i[r] = i[r] || function () {
+                            (i[r].q = i[r].q || [])
+                            .push(arguments)
+                        }, i[r].l = 1 * new Date();
+                        a = s.createElement(o)
+                            , m = s.getElementsByTagName(o)[0];
+                        a.async = 1;
+                        a.src = g;
+                        m.parentNode.insertBefore(a, m)
+                    })(window, document, 'script'
+                        , 'https://www.google-analytics.com/analytics.js'
+                        , 'ga');
+                    ga('create', 'UA-84234707-3', 'auto');
+                    ga('require', 'GTM-MFZG64F');
+                    ga('send', 'pageview');
+                </script>
+            <!-- /Google Analytics -->
+
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+            <!-- Mail Chimp -->
+                <script id="mcjs">
+                    ! function (c, h, i, m, p) {
+                        m = c.createElement(h), p = c.getElementsByTagName(h)[
+                            0], m.async = 1, m.src = i, p.parentNode.insertBefore(
+                            m, p)
+                    }(document, "script"
+                        , "https://chimpstatic.com/mcjs-connected/js/users/c7e6ac211ba61e50f8ddf1686/5f47cc339ad1153486c5ebe31.js"
+                    );
+                </script>
+            <!-- /Mail Chimp -->
+        <!-- /Scripts -->
     </head>
 
-    <body>
-        <!-- Header -->
-        <header>
-            <!-- Collapsing NavBar -->
-            <nav class="navbar navbar-light bg-faded">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    &#9776;
-                </button>
-                <div class="collapse" id="exCollapsingNavbar">
-
-                    <div class="bg-inverse p-a-1">
-
-                        <!-- Nav Bar (Pills with Dropdown) -->
-                        <ul class="nav nav-pills">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="Website-Development.html">Website Development</a>
-                                    <a class="dropdown-item" href="Marketing-Campaigns.html">Marketing Campaigns</a>
-                                    <a class="dropdown-item" href="Promotional-Services.html">Promotional Services</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- /Nav Bar (Pills with Dropdown) -->
-
-                    </div>
-                </div>
-            </nav>
-            <!-- /Collapsing NavBar -->
-
-            <img src="./images/png/Schilling-Enterprises.png" class="img-rounded m-x-auto d-block" alt="Schilling Enterprises logo">
-
-            <div class="text-xs-center">
-                <h1>Gavin Schilling Marketing</h1>
-                <h5>Subsidary of Schilling Enterprises</h5>
-            </div>
-
-        </header>
-        <!-- /Header -->
-        <!-- JavaScript plugins -->
-
-        <!-- jQuery script-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <!-- /jQuery script -->
-
-        <!-- Tether script -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha256-/5pHDZh2fv1eZImyfiThtB5Ag4LqDjyittT7fLjdT/8=" crossorigin="anonymous"></script>
-        <!-- /Tether script -->
-
-        <!-- Bootstrap script -->
-        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-        <!-- /Bootstrap script -->
-
-        <!-- Google Analytics -->
-        <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || [])
-                    .push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-84234707-3', 'auto');
-            ga('send', 'pageview');
-        </script>
-        <!-- /Google Analytics -->
-
-        <!-- /JavaScript plugins -->
-
-        <!-- Facebook SDK for JavaScript snippet -->
-        <script type="application/x-javascript">
-            window.fbAsyncInit = function() {
-                FB.init({
-                    appId: '561430954040905',
-                    xfbml: true,
-                    version: 'v2.7'
-                });
-            };
-
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) {
-                    return;
-                }
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-        <!-- /Facebook SDK for JavaScript snippet -->
-
-        <!-- IP Trace -->
-        <script type="text/javascript">
-            _gaq.push(['_setCustomVar', 1, 'IP', '<?=$ip;?>', 1]);
-        </script>
-        <!-- /IP Trace -->
-    </body>
+    <body></body>
 
     <footer>
-        <!-- Breadcrumbs -->
-        <nav class="breadcrumb">
-            <a class="breadcrumb-item" href="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/html/Marketing-Campaigns.html">Marketing Campaigns</a>
-        </nav>
-        <!-- /Breadcrumbs -->
+        <article>
+            <!-- Breadcrumb -->
+                <nav class="breadcrumb"><a class="breadcrumb-item" href="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/index.html">Home</a></nav>
+            <!-- /Breadcrumb -->
 
-        <!-- Copyright -->
-        <div>
-            <small>&copy;2017<a href="https://www.facebook.com/optimal.leader"> Schilling Enterprises</a></small>
-        </div>
-        <!-- /Copyright -->
+            <!-- Copywrite -->
+                <section class="col-xs">
+                    <small>&copy;
+                        <time>
+                            <script type="text/javascript">
+                                var theDate=new Date()
+                                document.write(theDate.getFullYear())
+                            </script>
+                        </time>
+                        <a href="https://www.facebook.com/optimal.leader"> Gavin Schilling Marketing - Subsidary of Schilling Enterprises</a>
+                        <address>
+                            1008 Lake Way, Suite D-7, Louisville, KY 40222-7349 | (502) 994-5865
+                        </address>
+                    </small>
+                </section>
+            <!-- /Copywrite -->
 
-        <!-- Facebook Like -->
-        <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
-        </div>
-        <!-- /Facebook Like -->
+            <!-- Facebook -->
+                <section class="fb-like" data-share="true" data-width="450" data-show-faces="true"></section>
+            <!-- /Facebook -->
+        </article>
     </footer>
+
+    <!-- JavaScript scripts -->
+        <!-- LinkedIn -->
+            <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+        <!-- /LinkedIn -->
+
+        <!-- Mail Chimp -->
+            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+            <script type="text/javascript">
+                require(["mojo/signup-forms/Loader"], function (L) {
+                    L.start({
+                        "baseUrl": "mc.us14.list-manage.com"
+                        , "uuid": "c7e6ac211ba61e50f8ddf1686"
+                        , "lid": "15dc97ed11"
+                    })
+                })
+            </script>
+        <!-- /Mail Chimp -->
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!-- /jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- /JavaScript scripts -->
 
 </template>
