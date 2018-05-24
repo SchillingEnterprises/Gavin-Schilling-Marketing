@@ -20,7 +20,7 @@ body > main > article > section.col-sm-12.col-md-8 > article > header {
 	color: gold;
 }
 
-body > main > article > section > div:nth-child(5) > article {
+body > main > article > section > div:nth-child(5) > article > div {
 	transform: rotate(90deg);
 }
 
