@@ -1,13 +1,22 @@
-html
-	background-image: url("https://coresites-cdn.factorymedia.com/cooler_new/wp-content/uploads/2017/03/iStock-495731108.jpg")
-	background-size: cover
+body, html
+  height: 100%
 
-body > main > article > section.col-sm-12.col-md-8 > article > header
-	font-family: 'Tangerine', 'Poiret One', 'Katibeh', cursive
-	color: gold
+.bg
+  /* The image used
+  background-image: url("https://coresites-cdn.factorymedia.com/cooler_new/wp-content/uploads/2017/03/iStock-495731108.jpg")
+  /* Full height
+  height: 100%
+  /* Center and scale the image nicely
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
 
-body > main > article > section > div:nth-child(5) > article
-	transform: rotate(90deg)
+body > main > article > section
+  &.col-sm-12.col-md-8 > article > header
+    font-family: 'Tangerine', 'Poiret One', 'Katibeh', cursive
+    color: gold
+  > div:nth-child(5) > article
+    transform: rotate(90deg)
 
 .breadcrumb
-	font-family: 'Poiret One', 'Katibeh', 'Tangerine', cursive
+  font-family: 'Poiret One', 'Katibeh', 'Tangerine', cursive
