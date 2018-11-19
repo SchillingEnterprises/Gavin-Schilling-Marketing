@@ -198,7 +198,7 @@
                                                 });
                                         });
                                     (function (d, s, id) {
-                                        var js, fjs = d.getElementsByTagName(
+                                        const js, fjs = d.getElementsByTagName(
                                             s)[0];
                                         if (d.getElementById(id)) return;
                                         js = d.createElement(s);
@@ -285,11 +285,11 @@
                 <!-- /Breadcrumb -->
 
                 <!-- Copywrite -->
-                    <section class="row justify-content-xs-center">
+                    <section class="justify-content-xs-center">
                         <small>&copy;
                             <time>
                                 <script type="text/javascript">
-                                    var theDate=new Date()
+                                    const theDate=new Date()
                                     document.write(theDate.getFullYear())
                                 </script>
                             </time>
