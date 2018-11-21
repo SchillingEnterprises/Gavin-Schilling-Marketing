@@ -41,15 +41,14 @@
         <!-- /Meta Data -->
 
         <!-- Stylesheets -->
-            <!-- Normalize CSS 8.0.0 -->
-            <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+            <!-- Normalize CSS 8.0.1 -->
+            <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 
             <!-- Tether 1.4.4 -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/css/tether.min.css" integrity="sha256-y4TDcAD4/j5o4keZvggf698Cr9Oc7JZ+gGMax23qmVA=" crossorigin="anonymous" />
 
             <!-- Bootstrap CSS -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
             <!-- Custom styles for dashboard -->
             <link href="https://v4-alpha.getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
 
@@ -196,7 +195,7 @@
                                                 });
                                         });
                                     (function (d, s, id) {
-                                        var js, fjs = d.getElementsByTagName(
+                                        const js, fjs = d.getElementsByTagName(
                                             s)[0];
                                         if (d.getElementById(id)) return;
                                         js = d.createElement(s);
@@ -283,11 +282,11 @@
                 <!-- /Breadcrumb -->
 
                 <!-- Copywrite -->
-                    <section class="col-xs">
+                    <section class="justify-content-xs-center">
                         <small>&copy;
                             <time>
                                 <script type="text/javascript">
-                                    var theDate=new Date()
+                                    const theDate=new Date()
                                     document.write(theDate.getFullYear())
                                 </script>
                             </time>
@@ -325,10 +324,11 @@
                 </script>
             <!-- /Mail Chimp -->
 
-    	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    		    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    		    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    		    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
             <!-- /jQuery first, then Popper.js, then Bootstrap JS -->
 
             <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
