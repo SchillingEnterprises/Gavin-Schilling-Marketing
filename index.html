@@ -55,7 +55,7 @@
         .async-hide{opacity:0 !important}
     </style>
     <script>
-        /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */ (function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){};} var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload");}catch(e){ret=false;} return function(){return ret;};})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){if(link.addEventListener){link.removeEventListener("load",enableStylesheet);}else if(link.attachEvent){link.detachEvent("onload",enableStylesheet);} link.setAttribute("onload",null);link.media=finalMedia;} if(link.addEventListener){link.addEventListener("load",enableStylesheet);}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet);} setTimeout(function(){link.rel="stylesheet";link.media="only x";});setTimeout(enableStylesheet,3000);};rp.poly=function(){if(rp.support()){return;} var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link);}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run);});}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run);});}} if(typeof exports!=="undefined"){exports.loadCSS=loadCSS;} else{w.loadCSS=loadCSS;}}(typeof global!=="undefined"?global:this));
+        /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */ (function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){};}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload");}catch(e){ret=false;}return function(){return ret;};})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){if(link.addEventListener){link.removeEventListener("load",enableStylesheet);}else if(link.attachEvent){link.detachEvent("onload",enableStylesheet);}link.setAttribute("onload",null);link.media=finalMedia;}if(link.addEventListener){link.addEventListener("load",enableStylesheet);}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet);}setTimeout(function(){link.rel="stylesheet";link.media="only x";});setTimeout(enableStylesheet,3000);};rp.poly=function(){if(rp.support()){return;}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link);}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run);});}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run);});}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS;}else{w.loadCSS=loadCSS;}}(typeof global!=="undefined"?global:this));
     </script>
     <script>
         (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;})(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-MFZG64F':true});
@@ -70,7 +70,9 @@
 
 <body>
     <article class="jumbotron">
-        <header class="display-3"><h1>Gavin Schilling Marketing</h1></header>
+        <header class="display-3">
+            <h1>Gavin Schilling Marketing</h1>
+        </header>
         <h4 class="lead">Leading in Positively Impacting Lives, Augmented Reality, and the Internet of Things (IoT)</h4>
         <hr class="m-y-md">
         <details>
@@ -143,7 +145,7 @@
         <article>
             <nav class="breadcrumb"> <a class="breadcrumb-item" href="https://schillingenterprises.github.io/Gavin-Schilling-Marketing/index.html">Home</a> 
             </nav>
-            <section class="justify-content-xs-center"> <small>&copy; <time> <script type="text/javascript">const theDate=new Date()document.write(theDate.getFullYear())</script> </time> <nav> <a href="https://www.facebook.com/optimal.leader"> Gavin Schilling Marketing - Subsidary of Schilling Enterprises</a> </nav> <address> 1008 Lake Way, Suite D-7, Louisville, KY 40222-7349 | (502) 994-5865 </address> </small> 
+            <section class="justify-content-xs-center"> <small>&copy; <time> <script type="text/javascript">document.write(new Date().getFullYear());</script> </time> <nav> <a href="https://www.facebook.com/optimal.leader"> Gavin Schilling Marketing - Subsidary of Schilling Enterprises</a> </nav> <address> 1008 Lake Way, Suite D-7, Louisville, KY 40222-7349 | (502) 994-5865 </address> </small> 
             </section>
             <section class="fb-like" data-share="true" data-width="450" data-show-faces="true"></section>
         </article>
